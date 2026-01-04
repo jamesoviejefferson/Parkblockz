@@ -50,13 +50,13 @@ ${formData.message}
                 Get in Touch
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight px-2">
-                Strategic Acquisition &{" "}
+                Strategic {" "}
                 <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                   Licensing
                 </span>
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-3xl mx-auto px-2">
-                ParkBlockX™ is available for acquisition and long-term licensing. This platform is patent-backed, architected, and simulation-tested.
+                ParkBlockX™ is available for long-term licensing. This platform is patent-backed, architected, and simulation-tested.
               </p>
             </div>
           </FadeUp>

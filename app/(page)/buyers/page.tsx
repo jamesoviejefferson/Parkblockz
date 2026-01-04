@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const FadeUp = ({ children, delay = 0 }: any) => (
   <motion.div
@@ -20,7 +21,7 @@ export default function Buyers() {
       desc: "Provides a modern software stack that replaces fragmented firmware, legacy backends, and single-rail payment systems.",
       detail: "Enables OEMs to transition from hardware-centric sales to recurring software licensing and platform revenue.",
       icon: "/software.png",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop",
+      image: "POMM.png",
       stats: ["Software-first", "Recurring revenue", "Global scale"]
     },
     {
@@ -28,7 +29,7 @@ export default function Buyers() {
       desc: "Delivers unified visibility across pricing, utilization, enforcement, and revenue — including remote and non-traditional locations.",
       detail: "Reduces operational overhead while increasing yield per space through dynamic pricing.",
       icon: "/Global.png",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop",
+      image: "GPO.png",
       stats: ["Unified platform", "AI optimization", "Remote capable"]
     },
     {
@@ -36,7 +37,7 @@ export default function Buyers() {
       desc: "Extends multi-rail payments into physical infrastructure with programmable settlement and compliance.",
       detail: "Positions parking as a high-frequency, real-world transaction surface for fiat, stablecoins, and future CBDCs.",
       icon: "/Software.png",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+      image: "/PNFP.png",
       stats: ["Multi-currency", "Real-time", "CBDC-ready"]
     },
     {
@@ -44,7 +45,7 @@ export default function Buyers() {
       desc: "Creates recurring demand for connectivity in locations historically unreachable by terrestrial networks.",
       detail: "Transforms parking infrastructure into distributed, always-on edge endpoints.",
       icon: "/strategy.png",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+      image: "/Satellite.png",
       stats: ["Edge computing", "IoT endpoints", "5G/Satellite"]
     }
   ];
@@ -60,11 +61,11 @@ export default function Buyers() {
           <FadeUp>
             <div className="text-center mb-12 sm:mb-16 md:mb-20">
               <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-                Strategic Acquisition Targets
+                Strategic Licensing Targets
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight px-2">
                 <span className="bg-linear-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                  Acquisition Rationale
+                Licensing Rationale
                 </span>
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-3xl mx-auto mb-3 sm:mb-4 px-2">
@@ -211,6 +212,7 @@ export default function Buyers() {
                   </div>
 
                   {/* CTA Button */}
+                  <Link href="/contact">
                   <div className="mt-8 sm:mt-10 md:mt-12">
                     <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40 hover:scale-105 text-sm sm:text-base">
                       Schedule Strategic Discussion
@@ -219,6 +221,7 @@ export default function Buyers() {
                       </svg>
                     </button>
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -237,9 +240,9 @@ export default function Buyers() {
                     className="object-contain sm:w-16 sm:h-16"
                   />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Flexible Acquisition Models</h3>
-                <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-                  Full acquisition, long-term licensing, or strategic partnership arrangements tailored to your organization's needs.
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Flexible Licensing Models</h3>
+                <p className="text-sm sm:text-base text-gray-400 leading-relaxed">ParkBlockX™ is offered through long-term licensing and strategic deployment partnerships.
+                Our licensing framework enables enterprises, municipalities, and infrastructure operators to deploy globally while ParkBlockX™ retains platform ownership, governance, and continuous innovation.
                 </p>
               </div>
             </FadeUp>
@@ -262,6 +265,17 @@ export default function Buyers() {
               </div>
             </FadeUp>
           </div>
+          {/* CTA Button */}
+          <Link href="/contact">
+                  <div className="mt-8 sm:mt-10 md:mt-12 flex justify-center ">
+                    <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40 hover:scale-105 text-sm sm:text-base">
+                      Schedule Strategic Discussion
+                      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </button>
+                  </div>
+                  </Link>
         </div>
       </section>
     </div>

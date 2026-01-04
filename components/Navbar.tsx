@@ -20,7 +20,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/platform", label: "Platform" },
     { href: "/why", label: "Why Now" },
-    { href: "/technology", label: "Technology" },
+    { href: "/technology", label: "Technology Stack" },
     { href: "/buyers", label: "Strategic Fit" },
   ];
 
@@ -55,10 +55,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link 
-              href="/contact" 
-              className="bg-linear-to-r from-blue-600 to-purple-600 text-white text-sm px-5 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity"
-            >
+            <Link href="/contact" className="btn btnPrimary text-sm px-5 py-2.5">
               Strategic Inquiries
             </Link>
           </div>
@@ -103,11 +100,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link 
-              href="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="bg-linear-to-r from-blue-600 to-purple-600 text-white text-sm px-5 py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity"
-            >
+            <Link href="/contact" className="btn btnPrimary text-center mt-2">
               Strategic Inquiries
             </Link>
           </div>
