@@ -297,7 +297,7 @@ export default function Platform() {
 
                 <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto order-1 lg:order-2">
                   <img 
-                    src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800&h=600&fit=crop"
+                    src="/Blockchain.png"
                     alt="Architecture"
                     className="w-full h-full object-cover"
                   />
