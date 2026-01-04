@@ -320,9 +320,11 @@ export default function Platform() {
               <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
                 Contact us to discuss acquisition, licensing, or partnership opportunities
               </p>
+              <Link href="/contact">
               <button className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-white text-blue-700 rounded-xl font-bold text-base sm:text-lg hover:shadow-2xl transition-all hover:scale-105">
                 Get Strategic Packet →
               </button>
+                </Link>
             </div>
           </FadeUp>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const FadeUp = ({ children, delay = 0 }: any) => (
   <motion.div
@@ -39,7 +40,7 @@ export default function Technology() {
         "CBDC-ready architecture",
       ],
       icon: "",
-      image: "/Multi Payments.png",
+      image: "/Multi Payment.png",
       color: "purple"
     },
     {
@@ -244,9 +245,11 @@ export default function Technology() {
 
                   {/* CTA Button */}
                   <div className="mt-8 sm:mt-10">
+                    <Link href="/contact">
                     <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40 hover:scale-105 text-sm sm:text-base">
                       Request Technical Documentation →
                     </button>
+                    </Link>
                   </div>
                 </div>
 
