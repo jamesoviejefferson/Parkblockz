@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 const FadeUp = ({ children, delay = 0 }: any) => (
   <motion.div
@@ -162,21 +163,33 @@ ${formData.message}
               {/* Direct Contact */}
               <FadeUp delay={0.2}>
                 <div className="bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/10">
-                  <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-xl sm:text-2xl shrink-0">
-                      ✉️
-                    </div>
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">Direct Email</h3>
-                      <p className="text-sm sm:text-base text-gray-400 mb-2 sm:mb-3">For immediate inquiries</p>
-                      <a 
-                        href="mailto:info@novaxquantum.com"
-                        className="text-sm sm:text-base text-blue-400 hover:text-blue-300 transition-colors font-medium break-all"
-                      >
-                        info@novaxquantum.com
-                      </a>
-                    </div>
-                  </div>
+                <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
+    <Image
+      src="/mail.png"
+      alt="Email"
+      width={22}
+      height={22}
+      className="object-contain sm:w-6 sm:h-6"
+    />
+  </div>
+
+  <div>
+    <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">
+      Direct Email
+    </h3>
+    <p className="text-sm sm:text-base text-gray-400 mb-2 sm:mb-3">
+      For immediate inquiries
+    </p>
+    <a
+      href="mailto:info@novaxquantum.com"
+      className="text-sm sm:text-base text-blue-400 hover:text-blue-300 transition-colors font-medium break-all"
+    >
+      info@novaxquantum.com
+    </a>
+  </div>
+</div>
+
                 </div>
               </FadeUp>
 
@@ -185,17 +198,25 @@ ${formData.message}
                 <div className="bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/10">
                   <h3 className="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6">What to Expect</h3>
                   <ul className="space-y-3 sm:space-y-4">
-                    {[
-                      { icon: "📋", text: "Confidential NDA process" },
-                      { icon: "📊", text: "Technical documentation package" },
-                      { icon: "🤝", text: "Strategic discussion call" },
-                      { icon: "💼", text: "Custom licensing proposals" }
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 sm:gap-3">
-                        <span className="text-xl sm:text-2xl">{item.icon}</span>
-                        <span className="text-sm sm:text-base text-gray-400 pt-0.5 sm:pt-1">{item.text}</span>
-                      </li>
-                    ))}
+                                        {[
+                                          { icon: "/Process.png", text: "Confidential NDA process" },
+                                          { icon: "/confidential.png", text: "Technical documentation package" },
+                                          { icon: "/strategy.png", text: "Strategic discussion call" },
+                                          { icon: "/custom-license.png", text: "Custom licensing proposals" }
+                                        ].map((item, i) => (
+                                          <div key={i} className="flex items-start gap-2 sm:gap-3">
+                                            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
+                                              <Image 
+                                                src={item.icon}
+                                                alt="check"
+                                                width={20}
+                                                height={20}
+                                                className="object-contain sm:w-6 sm:h-6"
+                                              />
+                                            </div>
+                                            <span className="text-base sm:text-lg text-gray-300">{item.text}</span>
+                                          </div>
+                                        ))}
                   </ul>
                 </div>
               </FadeUp>
@@ -230,15 +251,26 @@ ${formData.message}
           {/* Bottom CTA */}
           <FadeUp delay={0.5}>
             <div className="mt-12 sm:mt-16 md:mt-20 text-center">
-              <div className="inline-block bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/10">
-                <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">Prefer a different contact method?</p>
-                <a 
-                  href="mailto:info@novaxquantum.com?subject=ParkBlockX Strategic Inquiry"
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg sm:rounded-xl text-sm sm:text-base text-white font-medium transition-all"
-                >
-                  📧 Email Us Directly
-                </a>
-              </div>
+            <div className="inline-block bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/10">
+  <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">
+    Prefer a different contact method?
+  </p>
+
+  <a
+    href="mailto:info@novaxquantum.com?subject=ParkBlockX Strategic Inquiry"
+    className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg sm:rounded-xl text-sm sm:text-base text-white font-medium transition-all"
+  >
+    <Image
+      src="/mail.png"
+      alt="Email"
+      width={18}
+      height={18}
+      className="object-contain"
+    />
+    Email Us Directly
+  </a>
+</div>
+
             </div>
           </FadeUp>
         </div>
