@@ -105,7 +105,7 @@ export default function Technology() {
         "AI-driven energy optimization",
       ],
       icon: "",
-      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop",
+      image: "/PHXPower.png",
       color: "blue"
     },
     {
@@ -256,7 +256,7 @@ export default function Technology() {
                 {/* Right - Image */}
                 <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto order-1 lg:order-2">
                   <img 
-                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop"
+                    src="/PBXDrawing.png"
                     alt="System Architecture"
                     className="w-full h-full object-cover"
                   />
