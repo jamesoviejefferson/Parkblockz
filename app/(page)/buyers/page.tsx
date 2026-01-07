@@ -86,13 +86,12 @@ export default function Buyers() {
                   
                   <div className="relative bg-[#151B2E] rounded-xl sm:rounded-2xl border border-white/5 overflow-hidden hover:border-blue-500/30 transition-all">
                     {/* Image Header */}
-                    <div className="relative h-40 sm:h-48 overflow-hidden">
+                    <div className="relative w-full overflow-hidden">
                       <img 
                         src={buyer.image}
                         alt={buyer.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-linear-to-t from-[#151B2E] via-[#151B2E]/50 to-transparent" />
                       
                       {/* Icon Badge */}
                       <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6">

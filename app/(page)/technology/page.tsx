@@ -25,7 +25,7 @@ export default function Technology() {
         "Fault tolerance and predictive maintenance",
         "Urban, suburban, and remote deployment-ready",
       ],
-      icon: "",
+      icon: "/Autonomous.PNG",
       image: "/ParkBlockX Nodes.png",
       color: "blue"
     },
@@ -39,7 +39,7 @@ export default function Technology() {
         "Crypto assets: XRP, ETH, MATIC",
         "CBDC-ready architecture",
       ],
-      icon: "",
+      icon: "/multi-curren.PNG",
       image: "/Multi Payment.png",
       color: "purple"
     },
@@ -52,7 +52,7 @@ export default function Technology() {
         "Embedded secure payment modules",
         "Fully autonomous authorization flows",
       ],
-      icon: "",
+      icon: "/M2M.PNG",
       image: "/M2M payments.png",
       color: "cyan"
     },
@@ -65,7 +65,7 @@ export default function Technology() {
         "Chainlink oracle coordination",
         "Immutable parking and enforcement records",
       ],
-      icon: "",
+      icon: "/Blockchain secure copy.PNG",
       image: "/Blockchainn.png",
       color: "blue"
     },
@@ -78,7 +78,7 @@ export default function Technology() {
         "Historical and predictive analytics",
         "Automated rate adjustments",
       ],
-      icon: "",
+      icon: "/Ai dynamic.PNG",
       image: "/AI Driven.png",
       color: "purple"
     },
@@ -91,7 +91,7 @@ export default function Technology() {
         "Automatic failover",
         "Offline caching and synchronization",
       ],
-      icon: "",
+      icon: "/Framework.PNG",
       image: "/Satellite.png",
       color: "cyan"
     },
@@ -104,7 +104,7 @@ export default function Technology() {
         "Hybrid power systems",
         "AI-driven energy optimization",
       ],
-      icon: "",
+      icon: "/Renewable-energy.PNG",
       image: "/PHXPower.png",
       color: "blue"
     },
@@ -117,7 +117,7 @@ export default function Technology() {
         "Immutable audit trails",
         "AI-driven threat detection",
       ],
-      icon: "",
+      icon: "/quantum.PNG",
       image: "/Security.png",
       color: "purple"
     },
@@ -155,20 +155,26 @@ export default function Technology() {
                 <div className="group relative h-full">
                   <div className={`absolute inset-0 bg-linear-to-br from-${section.color}-600/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity`} />
                   
-                  <div className="relative bg-[#151B2E] rounded-xl sm:rounded-2xl border border-white/5 overflow-hidden hover:border-blue-500/30 transition-all h-full flex flex-col">
+                         <div className="relative bg-[#151B2E] rounded-xl sm:rounded-2xl border border-white/5 overflow-hidden hover:border-blue-500/30 transition-all h-full flex flex-col">
                     {/* Image Header */}
-                    <div className="relative h-48 sm:h-56 overflow-hidden">
+                    <div className="relative w-full overflow-hidden">
                       <img 
                         src={section.image}
                         alt={section.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-linear-to-t from-[#151B2E] via-[#151B2E]/70 to-transparent" />
+                      <div className="absolute inset-0 bg-linear-to-t from-[#151B2E] via-[#151B2E]/20 to-transparent" />
                       
                       {/* Icon Badge */}
                       <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-[#151B2E] border border-white/10 flex items-center justify-center text-2xl sm:text-3xl shadow-xl">
-                          {section.icon}
+                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-[#151B2E] border border-white/10 flex items-center justify-center shadow-xl p-2">
+                          <Image 
+                            src={section.icon}
+                            alt={section.title}
+                            width={40}
+                            height={40}
+                            className="object-contain w-full h-full"
+                          />
                         </div>
                       </div>
                     </div>

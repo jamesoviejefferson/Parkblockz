@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,13 @@ export default function Navbar() {
     { href: "/technology", label: "Technology Stack" },
     { href: "/buyers", label: "Strategic Fit" },
   ];
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <>
@@ -50,7 +59,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/70 hover:text-white text-[15px] font-medium transition-colors"
+                className={`text-[15px] font-medium transition-colors ${
+                  isActive(link.href)
+                    ? "text-blue-400"
+                    : "text-white/70 hover:text-white"
+                }`}
               >
                 {link.label}
               </Link>
@@ -95,7 +108,11 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-white/70 hover:text-white py-2"
+                className={`py-2 ${
+                  isActive(link.href)
+                    ? "text-blue-400"
+                    : "text-white/70 hover:text-white"
+                }`}
               >
                 {link.label}
               </Link>

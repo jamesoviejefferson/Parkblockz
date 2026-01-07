@@ -64,17 +64,25 @@ export default function Hero() {
             </FadeUp>
           </div>
 
-          {/* Hero Image/Mockup */}
+           {/* Hero Image/Mockup */}
           <FadeUp delay={0.4}>
             <div className="relative max-w-6xl mx-auto">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 via-transparent to-transparent blur-3xl" />
               
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-xl">
-                <img 
-                  src="/ParkBlockX Hero.jpg" 
+                {/* <video 
+                  src="/ParkBlockX Video.mov" 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] object-cover opacity-80"
+                /> */}
+                 <img 
+                  src="/ParkBlockXHeroImage.png" 
                   alt="Smart Parking Dashboard"
-                  className="w-full h-64 sm:h-96 md:h-[500px] lg:h-[600px] object-cover opacity-80"
+                  className="w-full h-64 sm:h-96 md:h-[550px] lg:h-[800px] object-cover opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-transparent to-transparent" />
               </div>
@@ -123,17 +131,17 @@ export default function Hero() {
           </FadeUp>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Feature 1 */}
+           {/* Feature 1 */}
             <FadeUp delay={0.1}>
               <div className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-blue-500/30 transition-all">
                   {/* Image */}
-                  <div className="mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden h-40 sm:h-48 bg-gradient-to-br from-blue-600/20 to-blue-800/20">
+                  <div className="mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden h-[500px] sm:h-[600px] md:h-[500px] lg:h-[600px] bg-gradient-to-br from-blue-600/20 to-blue-800/20">
                     <img 
                       src="/Multi Currency.png" 
                       alt="Multi-Currency Payments"
-                      className="w-full h-full object-cover opacity-70"
+                      className="w-full h-full object-cover object-center opacity-70"
                     />
                   </div>
                   
@@ -158,11 +166,11 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-purple-500/30 transition-all">
                   {/* Image */}
-                  <div className="mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden h-40 sm:h-48 bg-gradient-to-br from-purple-600/20 to-purple-800/20">
+                  <div className="mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden h-[500px] sm:h-[600px] md:h-[500px] lg:h-[600px] bg-gradient-to-br from-purple-600/20 to-purple-800/20">
                     <img 
                       src="/AI Dynamic Pricing.png" 
                       alt="AI Dynamic Pricing"
-                      className="w-full h-full object-cover opacity-70"
+                      className="w-full h-full object-cover object-center opacity-70"
                     />
                   </div>
                   
@@ -187,11 +195,11 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative bg-[#151B2E] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-cyan-500/30 transition-all">
                   {/* Image */}
-                  <div className="mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden h-40 sm:h-48 bg-gradient-to-br from-cyan-600/20 to-cyan-800/20">
+                  <div className="mb-4 sm:mb-6 rounded-lg sm:rounded-xl overflow-hidden h-[500px] sm:h-[600px] md:h-[500px] lg:h-[600px] bg-gradient-to-br from-cyan-600/20 to-cyan-800/20">
                     <img 
                       src="/Satellite Connection.png" 
                       alt="Satellite Connectivity"
-                      className="w-full h-full object-cover opacity-70"
+                      className="w-full h-full object-cover object-center opacity-70"
                     />
                   </div>
                   
@@ -220,11 +228,11 @@ export default function Hero() {
             <div className="bg-[#151B2E] rounded-2xl sm:rounded-3xl border border-white/5 overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 {/* Left - Image */}
-                <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto order-1">
+                <div className="relative h-[600px] sm:h-[700px] md:h-[800px] lg:h-auto order-1">
                   <img 
                     src="/Blockchain.png" 
                     alt="Blockchain Technology"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#151B2E] lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-[#151B2E]" />
                 </div>

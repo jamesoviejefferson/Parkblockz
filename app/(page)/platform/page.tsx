@@ -81,7 +81,7 @@ export default function Platform() {
     {
       title: "Smart Cities",
       desc: "Integrate with existing infrastructure",
-      image: "/ParkBlockX.png"
+      image: "/ParkBlockXLogoFix.png"
     },
     {
       title: "Remote Locations",
@@ -137,7 +137,7 @@ export default function Platform() {
               <img 
                 src="/ParkBlockX Retro Fit image.png"
                 alt="Platform Dashboard"
-                className="w-full h-64 sm:h-80 md:h-96 object-cover opacity-80"
+                className="w-full h-auto object-contain opacity-80"
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] via-transparent to-transparent" />
             </div>
@@ -235,21 +235,21 @@ export default function Platform() {
             </div>
           </FadeUp>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {useCases.map((useCase, idx) => (
               <FadeUp key={useCase.title} delay={idx * 0.1}>
-                <div className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 hover:border-cyan-500/30 transition-all">
-                  <div className="relative h-56 sm:h-64 overflow-hidden">
+                <div className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 hover:border-cyan-500/30 transition-all bg-[#151B2E]">
+                  <div className="relative w-full aspect-video overflow-hidden">
                     <img 
                       src={useCase.image}
                       alt={useCase.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] via-[#0B1120]/70 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] via-[#0B1120]/50 to-transparent" />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">{useCase.title}</h3>
-                    <p className="text-sm sm:text-base text-gray-300">{useCase.desc}</p>
+                  <div className="p-6 sm:p-8">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{useCase.title}</h3>
+                    <p className="text-sm sm:text-base text-gray-400">{useCase.desc}</p>
                   </div>
                 </div>
               </FadeUp>

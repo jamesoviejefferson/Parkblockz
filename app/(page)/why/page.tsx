@@ -138,12 +138,13 @@ export default function WhyNow() {
           <FadeUp delay={0.5}>
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 md:mb-20 max-w-6xl mx-auto">
               {/* Left - Image */}
-              <div className="relative h-64 sm:h-80 md:h-96 rounded-xl sm:rounded-2xl overflow-hidden order-2 lg:order-1">
+              <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden order-2 lg:order-1">
                 <Image 
                   src="/Ocean.png"
                   alt="Future Infrastructure"
-                  fill
-                  className="object-cover"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#0B1120] via-[#0B1120]/50 to-transparent" />
                 <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8">
