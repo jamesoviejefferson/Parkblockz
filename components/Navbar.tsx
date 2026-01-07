@@ -23,6 +23,7 @@ export default function Navbar() {
     { href: "/platform", label: "Platform" },
     { href: "/why", label: "Why Now" },
     { href: "/technology", label: "Technology Stack" },
+    { href: "/how", label: "How It Works" },
     { href: "/buyers", label: "Strategic Fit" },
   ];
 
