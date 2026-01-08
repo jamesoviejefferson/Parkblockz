@@ -21,9 +21,9 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/platform", label: "Platform" },
+    { href: "/how", label: "How It Works" },
     { href: "/why", label: "Why Now" },
     { href: "/technology", label: "Technology Stack" },
-    { href: "/how", label: "How It Works" },
     { href: "/buyers", label: "Strategic Fit" },
   ];
 

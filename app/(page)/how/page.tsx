@@ -37,7 +37,7 @@ const STEPS = [
     title: "Platform-first, hardware-agnostic",
     desc:
       "ParkBlockX™ is a licensed software platform that runs across multiple hardware form factors—purpose-built nodes, OEM integrations, retrofit upgrades, and custom enclosures—without locking operators into a single design.",
-    img: "/m2m.jpg",
+    img: "/how.png",
     badges: ["Software-defined", "Hardware-agnostic", "Licensable platform"],
   },
   {
@@ -45,7 +45,7 @@ const STEPS = [
     title: "Multiple deployment paths",
     desc:
       "Deploy greenfield smart nodes, upgrade legacy infrastructure via retrofit, or embed directly into OEM hardware—mixing models across a city or portfolio as needed.",
-    img: "/m2m.jpg",
+    img: "/how1.png",
     badges: ["New installs", "Retrofit option", "OEM embedded"],
   },
   {
@@ -53,7 +53,7 @@ const STEPS = [
     title: "Plug-and-play when needed",
     desc:
       "Standalone nodes can be provisioned and deployed rapidly. Once powered, they auto-register, authenticate securely, and begin operating—ideal for fast rollouts.",
-    img: "/m2m.jpg",
+    img: "/how2.png",
     badges: ["Provisioned rollout", "Auto-registration", "Fast deployment"],
   },
   {
@@ -61,7 +61,7 @@ const STEPS = [
     title: "Autonomous detection & occupancy intelligence",
     desc:
       "Multi-sensor detection and edge intelligence enable real-time presence, duration, and utilization signals—reducing reliance on manual workflows.",
-    img: "/m2m.jpg",
+    img: "/how3.jpg",
     badges: ["Multi-sensor", "Edge intelligence", "Real-time occupancy"],
   },
   {
@@ -69,7 +69,7 @@ const STEPS = [
     title: "Dynamic pricing & policy control",
     desc:
       "Pricing is continuously optimized using real-time and predictive signals while allowing operator policies, constraints, and governance rules to remain in control.",
-    img: "/m2m.jpg",
+    img: "/how4.jpg",
     badges: ["Demand-based", "Event-aware", "Policy constraints"],
   },
   {
@@ -77,7 +77,7 @@ const STEPS = [
     title: "Machine-to-machine authorization & settlement",
     desc:
       "Vehicles communicate directly with parking infrastructure using secure protocols to authorize and settle sessions automatically—reducing user friction.",
-    img: "/m2m.jpg",
+    img: "/how5.png",
     badges: ["NFC", "Bluetooth LE", "DSRC / V2X"],
   },
   {
@@ -85,7 +85,7 @@ const STEPS = [
     title: "Multi-rail payments by default",
     desc:
       "Support modern payment rails: cards & mobile wallets, blockchain settlement, stablecoins (USDC, RLUSD), crypto assets, and CBDC-ready integration patterns.",
-    img: "/m2m.jpg",
+    img: "/how6.png",
     badges: ["Fiat", "Stablecoins", "XRPL settlement", "CBDC-ready"],
   },
   {
@@ -93,7 +93,7 @@ const STEPS = [
     title: "Secure, auditable records",
     desc:
       "Parking events, payments, and enforcement actions are stored in tamper-resistant formats and audit trails for transparency, compliance, and dispute reduction.",
-    img: "/m2m.jpg",
+    img: "/how7.png",
     badges: ["Tamper-resistant", "Audit trails", "Compliance-ready"],
   },
   {
@@ -101,7 +101,7 @@ const STEPS = [
     title: "Always-on connectivity",
     desc:
       "Connectivity is treated as a core system layer: cellular + Wi-Fi + satellite-class options, automatic failover, and offline caching with synchronization.",
-    img: "/m2m.jpg",
+    img: "/how8.png",
     badges: ["LTE/5G/6G", "Satellite-ready", "Failover + offline sync"],
   },
   {
@@ -109,7 +109,7 @@ const STEPS = [
     title: "Unified management at any scale",
     desc:
       "Manage all deployments—regardless of form factor—through a unified operational layer for pricing, utilization, enforcement, revenue, and analytics.",
-    img: "/m2m.jpg",
+    img: "/how9.png",
     badges: ["Unified analytics", "Policy control", "Scales globally"],
   },
 ];
