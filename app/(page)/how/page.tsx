@@ -45,7 +45,7 @@ const STEPS = [
     title: "Multiple deployment paths",
     desc:
       "Deploy greenfield smart nodes, upgrade legacy infrastructure via retrofit, or embed directly into OEM hardware—mixing models across a city or portfolio as needed.",
-    img: "/how1.png",
+    img: "/how1.jpg",
     badges: ["New installs", "Retrofit option", "OEM embedded"],
   },
   {
